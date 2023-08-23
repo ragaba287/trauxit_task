@@ -6,7 +6,7 @@ ThemeData darkTheme() => ThemeData(
       fontFamily: 'Poppins',
       colorScheme: const ColorScheme(
         brightness: Brightness.dark,
-        primary: Color(0xff15A4D9),
+        primary: Colors.white,
         onPrimary: Colors.green,
         secondary: Colors.teal,
         onSecondary: Colors.amber,
