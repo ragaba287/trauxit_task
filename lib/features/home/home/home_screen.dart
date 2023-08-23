@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../core/widgets/image_fadder.dart';
-import '../../core/widgets/main_textbutton.dart';
+import '../../../core/widgets/image_fadder.dart';
+import '../../../core/widgets/main_textbutton.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
