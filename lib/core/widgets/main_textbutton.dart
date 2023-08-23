@@ -64,7 +64,7 @@ class MainTextButton extends StatelessWidget {
               style: TextStyle(
                 fontSize: 14,
                 color: buttonLook == ButtonLook.text
-                    ? const Color(0xff188653)
+                    ? theme.colorScheme.primary
                     : Colors.white,
                 fontWeight: FontWeight.w600,
                 height: 1.5,

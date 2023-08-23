@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:trauxit_task/core/router.dart';
+import 'package:trauxit_task/core/widgets/main_textbutton.dart';
+import 'package:trauxit_task/features/auth/login_screen.dart';
 
 import 'widgets/profile_info.dart';
 import 'widgets/social_media.dart';
@@ -8,14 +11,23 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 80),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       child: SingleChildScrollView(
         child: Column(
           children: [
-            ProfileInfo(),
-            SizedBox(height: 20),
-            SocialMediaList(),
+            const SizedBox(height: 80),
+            const ProfileInfo(),
+            const SizedBox(height: 20),
+            const SocialMediaList(),
+            MainTextButton(
+              onPressed: () => RouterNavigator.navigateAndPopAll(
+                const LoginScreen(),
+              ),
+              title: 'Logout',
+              buttonLook: ButtonLook.text,
+            ),
+            const SizedBox(height: 30),
           ],
         ),
       ),
