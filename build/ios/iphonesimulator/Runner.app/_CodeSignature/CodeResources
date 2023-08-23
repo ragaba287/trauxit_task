@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		k0im7CSiGQdSaPtw3lJ8MrkGDo4=
+		5OnGg9U2FYR5udXEWFpvsZrofLc=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		u+dJAG1DS708CrIbfrKhCzyfxto=
+		8qcpiENVjk5S9qW7UezlTO7xGlw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		T582Cgded/juAzCV3OjQ2Uxl9QI=
+		3gHSyFP3YEAeA/Q2mSGgL5iocVs=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/trauxit_bg.png</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		7EiMl+vuNYv8V/YmPwdzC1CpzmU=
+		gzery0qZT5K6cMIqXsUE5A6t6AU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/icons_plus/assets/flags/abkhazia.svg</key>
 		<data>
@@ -4140,9 +4140,21 @@
 		<data>
 		AlpzJs723M2kvDKd09SGvBFvlyE=
 		</data>
+		<key>Frameworks/url_launcher_ios.framework/Info.plist</key>
+		<data>
+		W7iO3nW2IfxLgdfypb0N8pa8nTM=
+		</data>
+		<key>Frameworks/url_launcher_ios.framework/_CodeSignature/CodeResources</key>
+		<data>
+		aMlQ8ANTzMhpphrBcbv+56rmpqg=
+		</data>
+		<key>Frameworks/url_launcher_ios.framework/url_launcher_ios</key>
+		<data>
+		SwBoPHNeoHIel6Jyixd8VKPsHbc=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		V10LeU0c/nAtIHv0JTN5ULhyc8g=
+		jYByqy13Kw4tSIafWBIY5Ym3wCw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -4225,7 +4237,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDX30R5rHmgw+QXd8lUKxq2SAThWszuz58k3yab8vA0=
+			XtCbgjf9NqXh6N5CnduiOgiL2KocPmGVT0Rh1IlQ+JI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -4239,7 +4251,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kzP+6E9iCz2ei7gDdj4NlNPktxJLocK5GI0m/rGiVf0=
+			5T+b4pOHdYYoXQGSKHUcTAS4SJSKRx9Hvk47UFijpJo=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -4267,7 +4279,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aul0LHlKik6ruv6jHdKmMiVI6vBI+GYKA14Z9yI3b38=
+			J/iaNmQQjH+L7Q6jT8SkTXfFXlJru6/8Vk1viqiOIoA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/trauxit_bg.png</key>
@@ -4302,7 +4314,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			atoLEel4Ttd7VZvOVjvNZZzwudrVpssCO754gMD+4aY=
+			yU5DrkEr5HfKsm1K6AEdCL4VlVBj7/7ARCl9BYC5fUQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/icons_plus/assets/flags/abkhazia.svg</key>
@@ -11387,6 +11399,27 @@
 			<key>hash2</key>
 			<data>
 			YCEePwHrnrtXwz+oMDMZECMr2/pC1OxOXZ+377GAMjg=
+			</data>
+		</dict>
+		<key>Frameworks/url_launcher_ios.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Xucv7mX8MrYKh3ax9jGMplpcOF5xK6GaVrTs2UzxiUw=
+			</data>
+		</dict>
+		<key>Frameworks/url_launcher_ios.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OW4zfCB7+Ae3AZpgx9Yd0Rg1Ry8tDbkM9EEmp8w1fHQ=
+			</data>
+		</dict>
+		<key>Frameworks/url_launcher_ios.framework/url_launcher_ios</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oBj/+0wAXgu3csNOihdV67catjvAXVVyoEKqCANT9cQ=
 			</data>
 		</dict>
 	</dict>

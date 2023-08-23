@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/widgets/main_tabbar.dart';
 import 'home/home_screen.dart';
-import 'home/profile_screen.dart';
+import 'home/profile/profile_screen.dart';
 
 class DashScreen extends StatelessWidget {
   const DashScreen({super.key});
