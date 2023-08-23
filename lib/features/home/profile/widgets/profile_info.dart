@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 import '../../../../core/funs.dart';
+import 'profile_info_item.dart';
 
 class ProfileInfo extends StatelessWidget {
   const ProfileInfo({super.key});
@@ -45,80 +46,57 @@ class ProfileInfo extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ProfileInfoItem(
-                    onTap: () async {
-                      lanchUrl('tel://+201026612529');
-                    },
+                    onTap: () async => lanchUrl('tel://+201026612529'),
                   ),
                   ProfileInfoItem(
-                      onTap: () {
-                        lanchUrl(
-                          'mailto:ragaba267@gmail.com?subject=Inquiry about TRAUXIT Task',
-                        );
-                      },
-                      icon: IonIcons.mail),
+                    onTap: () => lanchUrl(
+                      'mailto:ragaba267@gmail.com?subject=Inquiry about TRAUXIT Task',
+                    ),
+                    icon: IonIcons.mail,
+                  ),
                   ProfileInfoItem(
-                      onTap: () {
-                        lanchUrl(
-                          'whatsapp://send?phone=+201026612529&text=Inquiry about TRAUXIT Task',
-                        );
-                      },
-                      icon: Iconsax.whatsapp),
+                    onTap: () => lanchUrl(
+                      'whatsapp://send?phone=+201026612529&text=Inquiry about TRAUXIT Task',
+                    ),
+                    icon: Iconsax.whatsapp,
+                  ),
                 ],
               ),
             ],
           ),
         ),
-        Positioned(
-          top: -60,
-          right: 0,
-          left: 0,
-          child: Container(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(
-                color: Colors.white,
-                width: 4,
-              ),
-            ),
-            child: CircleAvatar(
-              radius: 60,
-              backgroundColor: Colors.white,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(50),
-                child: Image.network(
-                  'https://avatars.githubusercontent.com/u/37620588?v=4',
-                  fit: BoxFit.scaleDown,
-                  scale: 1,
-                ),
-              ),
-            ),
-          ),
-        ),
+        const ProfilePicrure(),
       ],
     );
   }
 }
 
-class ProfileInfoItem extends StatelessWidget {
-  const ProfileInfoItem({
-    super.key,
-    this.icon = BoxIcons.bxs_phone_call,
-    required this.onTap,
-  });
-  final IconData icon;
-  final Function onTap;
+class ProfilePicrure extends StatelessWidget {
+  const ProfilePicrure({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () => onTap(),
+    return Positioned(
+      top: -60,
+      right: 0,
+      left: 0,
       child: Container(
-        padding: const EdgeInsets.all(15),
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: Colors.white,
+          border: Border.all(color: Colors.white, width: 4),
         ),
-        child: Icon(icon),
+        child: CircleAvatar(
+          radius: 60,
+          backgroundColor: Colors.white,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(50),
+            child: Image.network(
+              'https://avatars.githubusercontent.com/u/37620588?v=4',
+              fit: BoxFit.scaleDown,
+              scale: 1,
+            ),
+          ),
+        ),
       ),
     );
   }

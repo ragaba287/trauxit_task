@@ -14,6 +14,7 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          const Spacer(),
           const ImageFadder(
             image:
                 'https://trauxit.com/wp-content/uploads/2023/08/TRAUXIT-2.png',
@@ -38,9 +39,10 @@ class HomeScreen extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           MainTextButton(
-            onPressed: () {},
+            onPressed: () => DefaultTabController.of(context).animateTo(1),
             title: 'Contact Me',
           ),
+          const Spacer(flex: 2),
         ],
       ),
     );
