@@ -6,7 +6,7 @@ ThemeData lightTheme() => ThemeData(
       fontFamily: 'Poppins',
       colorScheme: const ColorScheme(
         brightness: Brightness.light,
-        primary: Color(0xff15A4D9),
+        primary: Color(0xff040001),
         onPrimary: Colors.green,
         secondary: Colors.teal,
         onSecondary: Colors.amber,
@@ -14,7 +14,7 @@ ThemeData lightTheme() => ThemeData(
         onError: Colors.black,
         background: Colors.yellow,
         onBackground: Colors.green,
-        surface: Colors.blue,
+        surface: Colors.white,
         onSurface: Color(0x10188653),
       ),
       drawerTheme: const DrawerThemeData(

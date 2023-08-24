@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/widgets/main_tabbar.dart';
 import 'posts/post_screen.dart';
+import 'weather/weather_screen.dart';
 
 class DashScreen extends StatelessWidget {
   const DashScreen({super.key});
@@ -16,9 +17,7 @@ class DashScreen extends StatelessWidget {
           bottom: const PreferredSize(
               preferredSize: Size(0, 60), child: MainTabbar()),
         ),
-        body: const TabBarView(
-          children: [PostsScreen(), PostsScreen()],
-        ),
+        body: const TabBarView(children: [PostsScreen(), WeatherScreen()]),
       ),
     );
   }

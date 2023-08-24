@@ -47,12 +47,12 @@ class MainTextFormField extends StatelessWidget {
         ),
         decoration: InputDecoration(
           suffixIcon: Padding(
-            padding: const EdgeInsetsDirectional.only(end: 15),
+            padding: const EdgeInsetsDirectional.only(end: 5),
             child: suffixIcon,
           ),
           suffixIconConstraints: const BoxConstraints(
-            maxHeight: 20,
-            maxWidth: 35,
+            maxHeight: 40,
+            maxWidth: 90,
             minHeight: 20,
             minWidth: 35,
           ),

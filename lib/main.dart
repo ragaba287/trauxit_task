@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:trauxit_task/cubit/weather/weather_cubit.dart';
 
 import 'core/router.dart';
 import 'core/theme/dark_theme.dart';
@@ -18,6 +19,7 @@ class MainApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (BuildContext context) => PostsCubit()),
+        BlocProvider(create: (BuildContext context) => WeatherCubit()),
       ],
       child: BlocConsumer<PostsCubit, PostsStates>(
         listener: (context, state) {},
