@@ -1,3 +1,3 @@
-bool darkMode = true;
+bool darkMode = false;
 String token = '';
 String lang = '';
