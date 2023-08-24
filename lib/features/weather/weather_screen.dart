@@ -64,58 +64,74 @@ class WeatherScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(4)),
-                  child: Column(
-                    children: [
-                      Align(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          'Weather in : ${teSearch.text}',
-                          style: const TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 16,
+                if (cubit.weatherModel != null)
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 15),
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(4)),
+                    child: Column(
+                      children: [
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            'Weather in : ${teSearch.text}',
+                            style: const TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16,
+                            ),
                           ),
                         ),
-                      ),
-                      ImageFadder(
-                        height: 150,
-                        fit: BoxFit.fitHeight,
-                        image:
-                            'https://openweathermap.org/img/wn/${cubit.weatherModel?.weather?[0].icon}@4x.png',
-                      ),
-                      Text(
-                        cubit.weatherModel?.weather?[0].description ?? '',
-                        style: const TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
+                        ImageFadder(
+                          height: 150,
+                          fit: BoxFit.fitHeight,
+                          image:
+                              'https://openweathermap.org/img/wn/${cubit.weatherModel?.weather?[0].icon}@4x.png',
                         ),
-                      ),
-                      const SizedBox(height: 20),
-                      Align(
-                        alignment: Alignment.center,
-                        child: Text(
-                          cubit.weatherModel?.main?.temp.toString() ?? '',
+                        Text(
+                          cubit.weatherModel?.weather?[0].description ?? '',
                           style: const TextStyle(
-                            fontSize: 60,
-                            fontWeight: FontWeight.w800,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
-                      ),
-                      Text(
-                        'Feels like: ${cubit.weatherModel?.main?.feelsLike}',
-                        style: const TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600,
+                        const SizedBox(height: 20),
+                        Align(
+                          alignment: Alignment.center,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                cubit.weatherModel?.main?.temp.toString() ?? '',
+                                style: const TextStyle(
+                                  fontSize: 60,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                              const SizedBox(width: 3),
+                              const Text(
+                                '\u00B0',
+                                style: TextStyle(
+                                  fontSize: 50,
+                                  fontWeight: FontWeight.w800,
+                                  height: 1.3,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                        Text(
+                          'Feels like: ${cubit.weatherModel?.main?.feelsLike} \u2103',
+                          style: const TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
               ],
             ),
           );
