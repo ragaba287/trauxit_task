@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'core/const.dart';
+import 'core/router.dart';
 import 'core/theme/dark_theme.dart';
 import 'core/theme/light_theme.dart';
+import 'features/counter/counter_screen.dart';
 
 void main() => runApp(const MainApp());
 
@@ -11,19 +14,19 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      darkTheme: darkTheme(),
-      theme: lightTheme(),
-      debugShowCheckedModeBanner: false,
-      themeMode: darkMode ? ThemeMode.dark : ThemeMode.light,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Trauxit Task'),
-        ),
-        body: const Center(
-          child: Text('Hello World!'),
-        ),
+    return Provider(
+      create: (_) => counter(),
+      child: MaterialApp(
+        onGenerateRoute: onGenerateRoute,
+        navigatorKey: navigatorKey,
+        darkTheme: darkTheme(),
+        theme: lightTheme(),
+        debugShowCheckedModeBanner: false,
+        themeMode: ThemeMode.light,
+        home: CounterScreen(),
       ),
     );
   }
 }
+
+class counter {}
