@@ -49,6 +49,7 @@ class WeatherCubit extends Cubit<WeatherStates> {
         "appid": "bd5e378503939ddaee76f12ad7a97608",
         "lat": latLngModel.lat,
         "lon": latLngModel.lon,
+        "units": "metric",
       },
     ).then((value) {
       final data = value.data;
